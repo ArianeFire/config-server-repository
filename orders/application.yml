@@ -1,0 +1,32 @@
+spring:
+  #profiles.include: discovery,security
+  #cloud.zookeeper:
+  #  discovery.enabled: true
+  #  enabled: true
+  #  connectString: defaultZkHost:2181/${app.tenant}
+  application.name: orders
+
+app:
+  minPort: 8080
+  maxPort: 8080
+  tenant: a06-fr
+  perimeter: trainingm-order
+
+#spring.data.mongodb:
+#  host: defaultMongoServer
+
+#kafka:
+#  producer:
+#    brokers: fakeKafkaBroker:9092
+#    retries: 1
+#    topic: trainingm_send_order_archi
+#  consumer:
+#      groupId: trainingm_archi
+#      brokers: fakeKafkaBroker:9092
+#      pollIngInterval: 1000
+#      nbConsumerThreads: 1
+#      topics:
+#        - trainingm_validate_order_archi
+#      props:
+#        auto.offset.reset: latest
+#        max.partition.fetch.bytes: 102400
