@@ -1,0 +1,10 @@
+# spring.profiles.include: discovery,security
+
+spring:
+  application.name: products
+
+app:
+  minPort: 8080
+  maxPort: 8080
+  tenant: a06-fr
+  perimeter: trainingm-order
