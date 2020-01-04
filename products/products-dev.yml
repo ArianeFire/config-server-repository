@@ -14,3 +14,8 @@ spring.datasource:
   username: sa
   password:
   driverClassName: org.h2.Driver
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://192.168.1.101:8761/eureka
